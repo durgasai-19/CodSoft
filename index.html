@@ -3,15 +3,21 @@
 <head>
     <title>Sai Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header id="navbar">
     <h2 class="logo">Sai</h2>
+
+    <!-- CHECKBOX (hidden) -->
+    <input type="checkbox" id="menu-check">
+
+    <!-- HAMBURGER ICON -->
+    <label for="menu-check" class="menu-icon">&#9776;</label>
+
+    <!-- NAV LINKS -->
     <ul class="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,30 +27,24 @@
     </ul>
 </header>
 
-<!-- HOME -->
 <section id="home">
     <img src="profile.jpg" class="profile">
-
     <h1>Hello, I'm <span class="highlight">Durga Sai Reddy Tamma</span></h1>
     <p class="intro">CSE Student</p>
-
     <a href="#projects" class="btn">View Work</a>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>
 I am a Computer Science Engineering student with a strong goal of becoming a software developer. 
-I am passionate about programming and building modern, user-friendly applications using technologies like HTML, CSS, Python, and SQL. 
-I enjoy learning new concepts, improving my problem-solving skills, and working on projects that help me grow as a developer.
+I am passionate about programming and building modern, user-friendly applications using HTML, CSS, Python, and SQL. 
+I enjoy learning new concepts and improving my problem-solving skills.
     </p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
-
     <div class="skills-box">
         <div class="skill-card html">HTML</div>
         <div class="skill-card css">CSS</div>
@@ -53,10 +53,8 @@ I enjoy learning new concepts, improving my problem-solving skills, and working 
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
-
     <div class="project-container">
         <div class="card">
             <h3>Portfolio Website</h3>
@@ -65,7 +63,6 @@ I enjoy learning new concepts, improving my problem-solving skills, and working 
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: durgasaireddy19@gmail.com</p>
@@ -76,7 +73,6 @@ I enjoy learning new concepts, improving my problem-solving skills, and working 
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer id="footer">
     <p>© 2026 Sai Portfolio</p>
 </footer>
