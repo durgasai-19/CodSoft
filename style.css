@@ -4,8 +4,16 @@ body {
     font-family: Arial;
     background: #020617;
     color: white;
+    overflow-y:auto;
 }
 
+section {
+    min-height:100vh;
+    padding:80px 20px;
+}
+.section {
+    margin-bottom:50px;    
+}    
 h2 {
     margin-bottom: 20px;
 }
@@ -110,11 +118,18 @@ a:hover {
 }
 
 /* SKILL COLORS */
-.html { background: #e34c26; }
-.css { background: #264de4; }
-.js { background: #facc15; color: black; }
-.python { background: #22c55e; }
-.sql { background: #a855f7; }
+.html { 
+    background: #e34c26; 
+}
+.css {
+    background: #264de4; 
+}
+.python {
+    background: #22c55e; 
+}
+.sql {
+    background: #a855f7;
+}
 
 /* FLOAT ANIMATION */
 @keyframes float {
@@ -178,3 +193,6 @@ a:hover {
     padding: 15px;
     background: black;
 }
+html{
+    scroll-behavior:smooth;
+} 
