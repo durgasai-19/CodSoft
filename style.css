@@ -24,6 +24,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
     background: black;
     z-index: 1000;
@@ -31,6 +32,18 @@ html {
 
 .logo {
     color: #38bdf8;
+}
+
+/* HAMBURGER */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HIDE CHECKBOX */
+#menu-check {
+    display: none;
 }
 
 /* NAV LINKS */
@@ -52,13 +65,39 @@ html {
     color: #38bdf8;
 }
 
-/* SECTIONS (FIXED GAP ISSUE) */
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 20px;
+    }
+
+    #menu-check:checked ~ .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* SECTIONS */
 section {
     padding: 60px 15px 30px;
     text-align: center;
 }
 
-/* LAPTOP SPACING */
 @media (min-width: 768px) {
     section {
         padding: 70px 20px 40px;
@@ -71,7 +110,7 @@ section {
     }
 }
 
-/* HOME FIX (NAVBAR SPACE) */
+/* HOME */
 #home {
     padding-top: 100px;
 }
@@ -130,7 +169,6 @@ section {
     border-radius: 10px;
     font-weight: bold;
     animation: float 3s ease-in-out infinite;
-    transition: 0.3s;
 }
 
 .html { background: #e34c26; }
@@ -143,12 +181,6 @@ section {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
-}
-
-/* HOVER */
-.skill-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px white;
 }
 
 /* PROJECT */
@@ -192,20 +224,4 @@ section {
     text-align: center;
     padding: 15px;
     background: black;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .nav-list {
-        font-size: 12px;
-    }
-
-    .profile {
-        width: 110px;
-        height: 110px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
 }
